@@ -8,7 +8,6 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
-
 </head>
 <body>
 
@@ -26,19 +25,17 @@
         <!-- Search and Search History -->
         <div class="col-md-4 bg-light pb-3">
 
+      
             <div class="input-group my-3">
-                <input type="text" class="form-control" placeholder="Search for a City" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <input type="text" class="form-control" placeholder="Search for a City" id="citySearch">
                 <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+                    <button class="btn btn-outline-secondary" type="submit" id="searchBtn">Search</button>
                 </div>
             </div>
 
-            <ul class="list-group">
-                <li class="list-group-item">Cras justo odio</li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-                <li class="list-group-item">Morbi leo risus</li>
-                <li class="list-group-item">Porta ac consectetur ac</li>
-                <li class="list-group-item">Vestibulum at eros</li>
+    
+
+            <ul class="list-group" id="searchHistory">
             </ul>
         </div>
         
@@ -106,7 +103,8 @@
         </div>
     </div>
 
-    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
     
 </body>
 </html>

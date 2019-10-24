@@ -8,6 +8,9 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="moment.js"></script>
 </head>
 <body>
 
@@ -48,12 +51,13 @@
 
                 <div class="card">
                     <div class="card-body">
-                        <h2 class="card-title" id="city">City</h2> <img src="" alt=""/>
-                        <h6 class="card-subtitle mb-2 text-muted" id="currentDateAndTime">date</h6>
-                        <p class="card-text" id="tempurature">tempurature</p>
-                        <p class="card-text" id="humidity">humidity</p>
-                        <p class="card-text" id="windSpeed">windSpeed</p>
-                        <p class="card-text" id="uvIndex">uvIndex</p>
+                        <h2 class="card-title m-0" id="city">Search for a City</h2>
+                        <img src="" alt="Current Weather" id="currentWeatherIcon"/>
+                        <h6 class="card-subtitle mb-2 text-muted" id="currentDateAndTime">Date: </h6>
+                        <p class="card-text" id="currentTempurature">Tempurature: </p>
+                        <p class="card-text" id="currentHumidity">Humidity: </p>
+                        <p class="card-text" id="currentWindSpeed">Wind Speed: </p>
+                        <p class="card-text" id="currentUVIndex">UV Index:</p>
                     </div>
                 </div>
 
@@ -113,10 +117,6 @@
             </div>
         </div>
     </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="script.js"></script>
-    <script src="moment.js"></script>
     
 </body>
 </html>

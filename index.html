@@ -48,11 +48,12 @@
 
                 <div class="card">
                     <div class="card-body">
-                        <h2 class="card-title">City</h2>
-                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
+                        <h2 class="card-title" id="city">City</h2> <img src="" alt=""/>
+                        <h6 class="card-subtitle mb-2 text-muted" id="currentDateAndTime">date</h6>
+                        <p class="card-text" id="tempurature">tempurature</p>
+                        <p class="card-text" id="humidity">humidity</p>
+                        <p class="card-text" id="windSpeed">windSpeed</p>
+                        <p class="card-text" id="uvIndex">uvIndex</p>
                     </div>
                 </div>
 
@@ -63,7 +64,7 @@
 
             <!-- 5-day Forcast Title -->
             <div class="row mx-2">
-                <h3 class="ml-3">5-Day Forcast</h3>
+                <h3 class="ml-3">5-Day Forcast:</h3>
             </div>
 
             <!-- 5-day Forcast Title -->
@@ -71,40 +72,51 @@
                 <div class="card text-white bg-primary m-3" style="max-width: 10rem;">
                     
                     <div class="card-body">
-                        <h5 class="card-title">Primary card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <h5 class="card-title" id="day1date">day1</h5>
+                        <img src="" alt=""/>
+                        <p class="card-text" id="day1Temp">Temp:</p>
+                        <p class="card-text" id="day1Humidity">Humidity:</p>
                     </div>
                 </div>
                 <div class="card text-white bg-primary m-3" style="max-width: 10rem;">
                     <div class="card-body">
-                        <h5 class="card-title">Primary card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <h5 class="card-title" id="day2date">day2</h5>
+                        <img src="" alt=""/>
+                        <p class="card-text" id="day2Temp">Temp:</p>
+                        <p class="card-text" id="day1Humidity">Humidity:</p>
                     </div>
                 </div>
                 <div class="card text-white bg-primary m-3" style="max-width: 10rem;">
                     <div class="card-body">
-                        <h5 class="card-title">Primary card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <h5 class="card-title" id="day3date">day3</h5>
+                        <img src="" alt=""/>
+                        <p class="card-text" id="day3Temp">Temp:</p>
+                        <p class="card-text" id="day1Humidity">Humidity:</p>
                     </div>
                 </div>
                 <div class="card text-white bg-primary m-3" style="max-width: 10rem;">
                     <div class="card-body">
-                        <h5 class="card-title">Primary card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <h5 class="card-title" id="day4date">day4</h5>
+                        <img src="" alt=""/>
+                        <p class="card-text" id="day4Temp">Temp:</p>
+                        <p class="card-text" id="day1Humidity">Humidity:</p>
                     </div>
                 </div>
                 <div class="card text-white bg-primary m-3" style="max-width: 10rem;">
                     <div class="card-body">
-                        <h5 class="card-title">Primary card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <h5 class="card-title" id="day5date">day5</h5>
+                        <img src="" alt=""/>
+                        <p class="card-text" id="day5Temp">Temp:</p>
+                        <p class="card-text" id="day1Humidity">Humidity:</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="script.js"></script>
+    <script src="moment.js"></script>
     
 </body>
 </html>

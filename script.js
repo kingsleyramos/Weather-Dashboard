@@ -13,10 +13,6 @@ $("#searchBtn").click(function(){
 
     localStorage.setItem("SearchHistory", JSON.stringify(SearchHistory));
 
-    while (SearchHistory.length > 7){
-        SearchHistory.splice(-1,1);
-    }
-
     getWeather();
 });
 
@@ -26,7 +22,7 @@ function renderSearchHistory(){
 
     $("#searchHistory").empty();
 
-    while (SearchHistory.length > 7){
+    while (SearchHistory.length > 5){
         SearchHistory.splice(-1,1);
     }
 
@@ -75,7 +71,7 @@ function renderSearchHistory(){
             }).then(function(UVresponse) {
                 $("#currentUVIndex").text("UV Index: " + UVresponse.value);
             });
-    });
+        });
 };
 
 

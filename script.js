@@ -40,6 +40,15 @@ $("#searchBtn").click(function(){
     getWeather();
 });
 
+// function to render weather if history is clicked
+$(function(){
+    $("#searchHistory li").click(function(){
+        $("#forcast").empty();
+        cityToSearch = $(this).text()
+        getWeather();
+    });
+});
+
 
 // Renders Serach History in List under the search
 function renderSearchHistory(){

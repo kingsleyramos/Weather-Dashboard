@@ -6,11 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kingsley's Weather Dashboard</title>
 
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="script.js"></script>
-    <script src="moment.js"></script>
 </head>
 <body>
 
@@ -36,8 +35,7 @@
                 </div>
             </div>
 
-    
-
+            <!-- Search History List -->
             <ul class="list-group" id="searchHistory">
             </ul>
         </div>
@@ -52,7 +50,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h2 class="card-title m-0" id="city">Search for a City</h2>
-                        <img src="" alt="Current Weather Icon" id="currentWeatherIcon"/>
+                        <img src="placeholder.png" alt="Current Weather Icon" id="currentWeatherIcon"/>
                         <h6 class="card-subtitle mb-2 text-muted" id="currentDateAndTime">Date: </h6>
                         <p class="card-text" id="currentTempurature">Tempurature: </p>
                         <p class="card-text" id="currentHumidity">Humidity: </p>
@@ -72,51 +70,14 @@
             </div>
 
             <!-- 5-day Forcast Title -->
-            <div class="row mx-2">
-                <div class="card text-white bg-primary m-3" style="max-width: 10rem;">
-                    
-                    <div class="card-body">
-                        <h5 class="card-title" id="day1date">day1</h5>
-                        <img src="" alt=""/>
-                        <p class="card-text" id="day1Temp">Temp:</p>
-                        <p class="card-text" id="day1Humidity">Humidity:</p>
-                    </div>
-                </div>
-                <div class="card text-white bg-primary m-3" style="max-width: 10rem;">
-                    <div class="card-body">
-                        <h5 class="card-title" id="day2date">day2</h5>
-                        <img src="" alt=""/>
-                        <p class="card-text" id="day2Temp">Temp:</p>
-                        <p class="card-text" id="day1Humidity">Humidity:</p>
-                    </div>
-                </div>
-                <div class="card text-white bg-primary m-3" style="max-width: 10rem;">
-                    <div class="card-body">
-                        <h5 class="card-title" id="day3date">day3</h5>
-                        <img src="" alt=""/>
-                        <p class="card-text" id="day3Temp">Temp:</p>
-                        <p class="card-text" id="day1Humidity">Humidity:</p>
-                    </div>
-                </div>
-                <div class="card text-white bg-primary m-3" style="max-width: 10rem;">
-                    <div class="card-body">
-                        <h5 class="card-title" id="day4date">day4</h5>
-                        <img src="" alt=""/>
-                        <p class="card-text" id="day4Temp">Temp:</p>
-                        <p class="card-text" id="day1Humidity">Humidity:</p>
-                    </div>
-                </div>
-                <div class="card text-white bg-primary m-3" style="max-width: 10rem;">
-                    <div class="card-body">
-                        <h5 class="card-title" id="day5date">day5</h5>
-                        <img src="" alt=""/>
-                        <p class="card-text" id="day5Temp">Temp:</p>
-                        <p class="card-text" id="day1Humidity">Humidity:</p>
-                    </div>
-                </div>
+            <div class="row mx-2" id="forcast">
             </div>
         </div>
     </div>
     
+    <!-- Javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="moment.js"></script>
 </body>
 </html>

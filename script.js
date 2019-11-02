@@ -78,7 +78,7 @@ function getForcast(i, url){
         }).then(function(response) {
 
             //build Forcast URL
-            var dayWeatherImg = "http://openweathermap.org/img/wn/" + response.list[i].weather[0].icon + "@2x.png";
+            var dayWeatherImg = "https://openweathermap.org/img/wn/" + response.list[i].weather[0].icon + "@2x.png";
             
             // Converts UNIX time to MM/DD/YYYY
             var dayDateString = moment.unix(response.list[i].dt).format("MM/DD/YYYY");
@@ -100,8 +100,8 @@ function getForcast(i, url){
 function getWeather(){
 
     // Call URLs for city Searched
-    var currentWeatherURL = "http://api.openweathermap.org/data/2.5/weather?q=" + cityToSearch + "&units=imperial&appid=f00d24224c5175367e9256f06efb0e78";
-    var fiveDayWeatheruRL = "http://api.openweathermap.org/data/2.5/forecast?q=" + cityToSearch + "&units=imperial&cnt=40&appid=f00d24224c5175367e9256f06efb0e78";
+    var currentWeatherURL = "https://api.openweathermap.org/data/2.5/weather?q=" + cityToSearch + "&units=imperial&appid=f00d24224c5175367e9256f06efb0e78";
+    var fiveDayWeatheruRL = "https://api.openweathermap.org/data/2.5/forecast?q=" + cityToSearch + "&units=imperial&cnt=40&appid=f00d24224c5175367e9256f06efb0e78";
 
     console.log("fiveday forcast: " + fiveDayWeatheruRL)
 
@@ -112,7 +112,7 @@ function getWeather(){
         }).then(function(response) {
     
             // Creates Image URL
-            var currentWeatherImg = "http://openweathermap.org/img/wn/" + response.weather[0].icon + "@2x.png";
+            var currentWeatherImg = "https://openweathermap.org/img/wn/" + response.weather[0].icon + "@2x.png";
             // Converts UNIX time to MM/DD/YYY
             var dateString = moment.unix(response.dt).format("MM/DD/YYYY | h:mm a");
 
@@ -125,7 +125,7 @@ function getWeather(){
             $("#currentWindSpeed").text("Wind Speed: " + response.wind.speed);
             
             // pulls the weather icon
-            var currentUVIndexURL = "http://api.openweathermap.org/data/2.5/uvi?lat=" + response.coord.lat + "5&lon=" + response.coord.lon + "&appid=f00d24224c5175367e9256f06efb0e78"
+            var currentUVIndexURL = "https://api.openweathermap.org/data/2.5/uvi?lat=" + response.coord.lat + "5&lon=" + response.coord.lon + "&appid=f00d24224c5175367e9256f06efb0e78"
             $.ajax({
                 url: currentUVIndexURL,
                 method: "GET"

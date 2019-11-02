@@ -133,7 +133,7 @@ function getWeather(){
                 url: currentUVIndexURL,
                 method: "GET"
                 }).then(function(UVresponse) {
-                    $("#currentUVIndex").text("Current UV Index: " + UVresponse.value);
+                    $("#currentUVIndex").text("UV Index: " + UVresponse.value);
                 }); // END of AJAX call
             }); // END of AJAX call
 

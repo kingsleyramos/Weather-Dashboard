@@ -38,6 +38,9 @@ $("#searchBtn").click(function(){
 
     // Generates weather
     getWeather();
+
+    // Clears search after a search
+    $("#citySearch").val("");
 });
 
 // function to render weather if history is clicked

@@ -1,11 +1,20 @@
-# Homework 6: Weather-Dashboard
+# Weather-Dashboard
 
-## Project Goal
+This responsive application displays the current weather and weather forecast of a city that is search and saves the searched city. The search history is displayed under the search bar so you may click on any previously searched cities.
 
-Create a weather dashboard so a user may obtain the current weather and weather forecast of a city that search or searched
+## Click [Here](https://kingsleyramos.github.io/Weather-Dashboard/) for deployed application.
+---
+![](images/index.gif)
 
-## Challenges
+## Tool & Resources
+---
+* [Bootstrap](https://getbootstrap.com/) - CSS framework used
+* [JQuery](https://getbootstrap.com/) - JavaScript library used
+* [Moment.js](https://momentjs.com/) - Date/Time API
+* [OpenWeather API](https://openweathermap.org/api) - Weather data API
 
+## Assignment Challenges
+---
 ### Struggle 1: UNIX TIME
 
 It took me a bit of time to figure out UNIX time but realized that moment.js can convert UNIX to any format. Another issue I ran into, which I did not know until I spoke to a fellow classmate, was the time that was in the first element of the array within the forecast was the weather at 3 am. I had to select the time that was to about midday by choosing the right
